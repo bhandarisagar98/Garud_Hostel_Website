@@ -86,7 +86,16 @@
   }
   
   .c-main-nav-individual > ul > li {
-    list-style: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    font-size: 16px;
+    font-family: roboto;
+    font-weight: 400;
+    gap:14px;
+
   }
   
   .c-main-nav-individual > img {
@@ -104,4 +113,19 @@
     border: none;
     border-radius: 6px;
   }
+
+
+  .c-logo{
+    width: 20%;
+  }
+
+  .c-button{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
   
+  .c-navigation-items{
+    width: 60%;
+  }
