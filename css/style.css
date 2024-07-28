@@ -1,6 +1,14 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+  }
+  .white{
+    color: white;
+  }
+
+  .p-2{
+    padding-bottom: 10px;
   }
   
   .logo-blue {
@@ -129,3 +137,58 @@
   .c-navigation-items{
     width: 60%;
   }
+
+  .c-hero-section{
+    height: 70vh;
+    background-image: url(/images/Garud\ boys\ hostel\ image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:1
+
+  }
+  
+  .c-hero-section-1{
+    text-align: center;
+    z-index: 2;
+  }
+
+ .c-hero-section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.76);
+    z-index:1.1
+ }
+
+ .c-herosection-button{
+  margin-top: 10px;
+ }
+
+ .c-hero-section-1 > h1{
+  font-size: 45px;
+  font-family: roboto;
+  font-weight: bold;
+ }
+
+ .c-hero-section-1 > h2 {
+  font-size: 20px;
+  font-family: roboto;
+  font-weight: 500;
+  padding-bottom: 10px;
+ }
+
+ .c-hero-section-1 >p {
+  font-family: roboto;
+  font-size: 16px;
+  font-weight: 400;
+ }
